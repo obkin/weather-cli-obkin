@@ -1,9 +1,11 @@
 {
   "name": "weather-cli",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "CLI for getting weather in your region",
   "main": "weather.js",
+  "bin": "./weather.js", 
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +13,13 @@
     "weather"
   ],
   "author": "Yaroslav Gudz",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://youtube.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obkin/weather-cli"
+  },
+  "bugs": {
+    "email": "kapellwork@gmail.com"
+  }
 }
