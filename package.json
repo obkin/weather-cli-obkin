@@ -3,7 +3,9 @@
   "version": "1.0.0-alpha",
   "description": "CLI for getting weather in your region",
   "main": "weather.js",
-  "bin": "./weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
