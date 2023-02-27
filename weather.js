@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { getArgs } from "./helpers/args.js";
+import { printError, printSuccess, printHelp } from "./services/log.service.js";
 
 const initCli = () => {
-    const agrs = getArgs(process.argv);
-    console.log(agrs);
+    const args = getArgs(process.argv);
     if (args.h) {
-        // Виводимо help
+        printHelp();
     }
     if (args.s) {
         // Зберігаємо місто
