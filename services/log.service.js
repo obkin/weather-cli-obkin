@@ -12,10 +12,16 @@ const printSuccess = (message) => {
 const printHelp = () => {
     console.log(
         dedent(`${chalk.bgCyan(' HELP ')}
-        '-h' - help info;
-        '-s [CITY]]' - set city;
-        '-t [TOKEN (API_KEY)]' - set token;
-        'weather' - weather forecast.
+
+        "-s [CITY]]" ${chalk.magenta('- set city')}
+        "-t [TOKEN]" ${chalk.magenta('- set token (api key)')}
+
+        "-h" ${chalk.magenta('- help info')}
+        "weather" ${chalk.magenta('- show the weather forecast')}
+
+        ${chalk.dim('You can always contact us:')}
+        ${chalk.dim('kapellwork@gmail.com')}
+
         `)
     );
 };
