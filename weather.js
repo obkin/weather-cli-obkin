@@ -8,7 +8,7 @@ const saveToken = async (userToken) => {
         await saveKeyValue('token', userToken);
         printSuccess('The token was saved ;)');
     } catch(e) {
-        printError(e.message);
+        printError(e.message + '.');
     }
 };
 
