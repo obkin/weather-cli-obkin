@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { getArgs } from "./helpers/args.js";
 import { printError, printSuccess, printHelp } from "./services/log.service.js";
-import { saveKeyValue, TOKEN_DICTIONARY } from "./services/storage.service.js";
+import { getKeyValue, saveKeyValue, TOKEN_DICTIONARY } from "./services/storage.service.js";
 import { getWeather } from "./services/api.service.js";
 
 const saveToken = async (userToken) => {
@@ -17,9 +17,23 @@ const saveToken = async (userToken) => {
     }
 };
 
-const getForcast = async () => {
+const saveCity = async (userCity) => {
+    if (!userCity.length) {
+        printError('Please, enter the city: -s [CITY]');
+        return;
+    }
     try {
-        const weather = await getWeather(process.env.CITY);
+        await saveKeyValue(TOKEN_DICTIONARY.city, userCity);
+        printSuccess(`'${userCity}' - saved as a city ;)`);
+    } catch(e) {
+        printError(e.message + '.');
+    }
+};
+
+const getForcast = async () => {
+    const city = await getKeyValue(TOKEN_DICTIONARY.city);
+    try {
+        const weather = await getWeather(city);
         console.log(weather); // Гарно вивести погоду
     } catch(e) {
         if (e?.response?.status === 404) {
@@ -38,7 +52,7 @@ const initCli = () => {
         printHelp();
     }
     if (args.s) {
-        // Зберегти місто
+        return saveCity(args.s);
     }
     if (args.t) {
         return saveToken(args.t);
