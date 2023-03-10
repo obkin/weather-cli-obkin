@@ -17,6 +17,21 @@ const saveToken = async (userToken) => {
     }
 };
 
+const getForcast = async () => {
+    try {
+        const weather = await getWeather(process.env.CITY);
+        console.log(weather);
+    } catch(e) {
+        if (e?.response?.status === 404) {
+            printError('Wrong name of city :/');
+        } else if (e?.response?.status === 401) {
+            printError('Wrong token :/');
+        } else {
+            printError(`Something went wrong: ${e.message}.`);
+        }
+    }
+};
+
 const initCli = () => {
     const args = getArgs(process.argv);
     if (args.h) {
@@ -28,7 +43,7 @@ const initCli = () => {
     if (args.t) {
         return saveToken(args.t);
     }
-    getWeather('kyiv');
+    getForcast();
     // Вивести погоду (якщо аргументи не були передані)
 };
 
