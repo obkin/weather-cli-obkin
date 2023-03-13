@@ -3,23 +3,21 @@
 A small utility that can show you the weather in the specified region.
 You can use it like a program or API for your projects.
 
+npm-page [here]
+
 How to use:
-
-    To install: npm i -g weather-cli-obkin
-
-    Then you need to set the token: weather -t [TOKEN]
-    And then, just set the city: weather -s [CITY]
-
-    Now you can get the weather in setted city: weather
+    How to install: `npm i -g weather-cli-obkin`
+    First you need to set the token: `weather -t [TOKEN]`
+    And then just set the city: `weather -s [CITY]`
+    Now you can find out the weather in the set city: `weather`
+---
 
 Console commands:
-
-    Open help menu: weather -h
-
-    Set and save token: weather -t [TOKEN]
-    Set and save city: weather -s [CITY]
-
-    Get weather: weather
+    Open help menu: `weather -h`
+    Set and save token: `weather -t [TOKEN]`
+    Set and save city: `weather -s [CITY]`
+    Get weather: `weather`
+---
 
 More:
 
