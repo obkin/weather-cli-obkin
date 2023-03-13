@@ -1,6 +1,38 @@
 import axios from 'axios';
 import { getKeyValue, TOKEN_DICTIONARY } from './storage.service.js';
 
+const getIcon = (iconID) => {
+    switch(iconID.slice(0, 2)) {
+        case '01':
+            return '🌞';
+            break;
+        case '02':
+            return '🌤';
+            break;
+        case '03':
+            return '🌥️';
+            break;
+        case '04':
+            return '🌥️';
+            break;
+        case '09':
+            return '🌧️';
+            break;
+        case '10':
+            return '🌦️';
+            break;
+        case '11':
+            return '🌩️';
+            break;
+        case '13':
+            return '🌨️';
+            break;
+        case '50':
+            return '🌫️';
+            break;
+    };
+};
+
 const getWeather = async (city) => {
     const token = process.env.TOKEN ?? await getKeyValue(TOKEN_DICTIONARY.token);
     if (!token) {
@@ -10,11 +42,11 @@ const getWeather = async (city) => {
         params: {
             q: city,
             appid: token,
-            lang: 'ua',
+            lang: 'eng',
             units: 'metric'
         }
     });
     return data;
 };
 
-export { getWeather };
+export { getWeather, getIcon };
