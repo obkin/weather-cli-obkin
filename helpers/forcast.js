@@ -1,0 +1,3 @@
+const getConsoleForcast = (weather) => {
+    weather
+};

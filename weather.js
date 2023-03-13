@@ -8,6 +8,9 @@ const saveToken = async (userToken) => {
     if (!userToken.length) {
         printError('Please, enter the token: -t [TOKEN]');
         return;
+    } else if (userToken === 'undefined') {
+        printError('Please, enter the correct token name.');
+        return;
     }
     try {
         await saveKeyValue(TOKEN_DICTIONARY.token, userToken);
@@ -20,6 +23,9 @@ const saveToken = async (userToken) => {
 const saveCity = async (userCity) => {
     if (!userCity.length) {
         printError('Please, enter the city: -s [CITY]');
+        return;
+    } else if (userCity === 'undefined') {
+        printError('Please, enter the correct name of the city.');
         return;
     }
     try {
@@ -37,7 +43,7 @@ const getForcast = async () => {
         console.log(weather); // Гарно вивести погоду
     } catch(e) {
         if (e?.response?.status === 404) {
-            printError('Wrong name of city.');
+            printError('Wrong name of the city.');
         } else if (e?.response?.status === 401) {
             printError('Wrong token.');
         } else {
