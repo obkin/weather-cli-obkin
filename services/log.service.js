@@ -43,13 +43,13 @@ const printWeather = (weatherObj) => {
 function getTemperatureColor(temperature) {
     if (temperature < 0) {
         return chalk.dim(chalk.gray(temperature));
-    } else if (temperature === 0 || temperature < 9) {
-        return chalk.gray(temperature);
-    } else if (temperature => 9 && temperature < 17) {
+    } else if (temperature === 0 || temperature <= 9) {
+        return chalk.hex('#1479de')(temperature);
+    } else if (temperature > 9 && temperature <= 17) {
         return chalk.green(temperature);
-    } else if (temperature => 17 && temperature < 25) {
+    } else if (temperature > 17 && temperature <= 25) {
         return chalk.yellow(temperature);
-    } else if (temperature => 25) {
+    } else if (temperature > 25) {
         return chalk.hex('#fc0303')(temperature);
     }
 }
