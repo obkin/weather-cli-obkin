@@ -28,10 +28,12 @@ const printHelp = () => {
 };
 
 const printWeather = (weatherObj) => {
+    const curTemp = weatherObj.main.temp;
+    const feelsTemp = weatherObj.main.feels_like;
     console.log(chalk.bgYellow(' WEATHER '),
         `Here is the weather in ${chalk.magenta(weatherObj.name)}:
           Now: ${chalk.dim(weatherObj.weather[0].description)} ${getIcon(weatherObj.weather[0].icon)}
-          Temperature: ${getTemperatureColor(weatherObj.main.temp)}°C, feels like: ${getTemperatureColor(weatherObj.main.feels_like)}°C
+          Temperature: ${getTemperatureColor(curTemp.toFixed(1))}°C, feels like: ${getTemperatureColor(feelsTemp.toFixed(1))}°C
           Humidity: ${chalk.dim(weatherObj.main.humidity)}${chalk.dim('%')}
           Wind speed: ${chalk.dim(weatherObj.wind.speed)}${chalk.dim('m/s')}
 
