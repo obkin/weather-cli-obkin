@@ -15,12 +15,11 @@
     "cli",
     "weather"
   ],
-  "author": "Yaroslav Gudz",
+  "author": "obkin",
   "license": "ISC",
-  "homepage": "https://youtube.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/obkin/weather-cli"
+    "url": "https://github.com/obkin/weather-cli-obkin"
   },
   "bugs": {
     "email": "kapellwork@gmail.com"
