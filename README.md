@@ -3,9 +3,7 @@
 A small utility that can show you the weather in the specified region.
 You can use it like a program or API for your projects.
 
-npm-page [here](https://www.npmjs.com/package/weather-cli-obkin)
-
----
+You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli-obkin).
 
 ### How to use:
 
@@ -17,8 +15,6 @@ npm-page [here](https://www.npmjs.com/package/weather-cli-obkin)
 
 > Now you can find out the weather in the set city: `weather`
 
----
-
 ### Console commands:
 
 > Open help menu: `weather -h`
@@ -29,8 +25,6 @@ npm-page [here](https://www.npmjs.com/package/weather-cli-obkin)
     
 > Get weather: `weather`
 
----
-
 ### More:
 
 ###### You can find out the weather without city or token saving, just run the programm so: 
@@ -40,8 +34,6 @@ npm-page [here](https://www.npmjs.com/package/weather-cli-obkin)
 > Enter the token without saving: `TOKEN=token_name weather`
 
 > Enter the token and the city without saving: `TOKEN=token_name CITY=city_name weather`
-
----
 
 ### Appearance:
 
