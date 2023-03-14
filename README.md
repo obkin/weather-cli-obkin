@@ -1,9 +1,11 @@
-# Weather CLI-utility / weather console utility
+# Weather CLI-utility (console-utility)
 
 A small utility that can show you the weather in the specified region.
 You can use it like a program or API for your projects.
 
 You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli-obkin).
+
+---
 
 ### How to use:
 
