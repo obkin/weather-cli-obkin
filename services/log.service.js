@@ -44,7 +44,7 @@ const printWeather = (weatherObj) => {
 
 function getTemperatureColor(temperature) {
     if (temperature < 0) {
-        return chalk.dim(chalk.gray(temperature));
+        return chalk.hex('#4579a8')(temperature);
     } else if (temperature === 0 || temperature <= 9) {
         return chalk.hex('#1479de')(temperature);
     } else if (temperature > 9 && temperature <= 17) {
