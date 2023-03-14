@@ -5,7 +5,7 @@ You can use it like a program or API for your projects.
 
 npm-page [https://www.npmjs.com/package/weather-cli-obkin]
 
-###### How to use:
+### How to use:
 
 > How to install: `npm i -g weather-cli-obkin`
 
@@ -14,8 +14,7 @@ npm-page [https://www.npmjs.com/package/weather-cli-obkin]
 
 > Now you can find out the weather in the set city: `weather`
 
-
-###### Console commands:
+### Console commands:
 
 > Open help menu: `weather -h`
 
