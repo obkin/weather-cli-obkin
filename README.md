@@ -29,8 +29,8 @@ npm-page [https://www.npmjs.com/package/weather-cli-obkin]
 
 ###### You can change the city or token without saving, just run the programm so: 
 
-> CITY=city_name weather
+> Enter the city without saving: `CITY=city_name weather`
 
-> TOKEN=token_name weather
+> Enter the token without saving: `TOKEN=token_name weather`
 
-> TOKEN=token_name CITY=city_name weather
+> Enter the token and the city without saving:  `TOKEN=token_name CITY=city_name weather`
