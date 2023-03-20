@@ -7,8 +7,6 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 ---
 
-<br>
-
 ### How to use:
 
 > How to install: `npm i -g weather-cli-obkin`
@@ -19,8 +17,6 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 > Now you can find out the weather in the set city: `weather`
 
-<br>
-
 ### Console commands:
 
 > Open help menu: `weather -h`
@@ -30,8 +26,6 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 > Set and save city: `weather -s [CITY]`
     
 > Get weather: `weather`
-
-<br>
 
 ### More:
 
@@ -44,15 +38,11 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 > Enter the token and the city without saving: <br> 
 `TOKEN=token_name CITY=city_name weather`
 
-<br>
-
 ### Appearance:
 
 [![weather-cli-obkin-example.png](https://i.postimg.cc/GhfZg7R8/weather-cli-obkin-example.png)](https://postimg.cc/JGb6GQGM)
 
 ---
-
-<br>
 
 ### Contacts:
 
