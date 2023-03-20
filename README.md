@@ -7,6 +7,8 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 ---
 
+<br>
+
 ### How to use:
 
 > How to install: `npm i -g weather-cli-obkin`
@@ -49,6 +51,8 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 [![weather-cli-obkin-example.png](https://i.postimg.cc/GhfZg7R8/weather-cli-obkin-example.png)](https://postimg.cc/JGb6GQGM)
 
 ---
+
+<br>
 
 ### Contacts:
 
