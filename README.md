@@ -17,6 +17,8 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 > Now you can find out the weather in the set city: `weather`
 
+<br>
+
 ### Console commands:
 
 > Open help menu: `weather -h`
@@ -26,6 +28,8 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 > Set and save city: `weather -s [CITY]`
     
 > Get weather: `weather`
+
+<br>
 
 ### More:
 
@@ -37,6 +41,8 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 > Enter the token and the city without saving: <br> 
 `TOKEN=token_name CITY=city_name weather`
+
+<br>
 
 ### Appearance:
 
