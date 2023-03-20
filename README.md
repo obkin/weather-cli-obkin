@@ -51,4 +51,4 @@ If you need some help, you can always contact me:
 * email: kapellwork@gmail.com <br>
 * instagram: https://www.instagram.com/yarik_05_05
 
-Thank you for using my app!!😃
+Thank you for using my app!😃
