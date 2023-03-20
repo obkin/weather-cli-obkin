@@ -35,9 +35,11 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 > Enter the token without saving: `TOKEN=token_name weather`
 
-> Enter the token and the city without saving: 
-    `TOKEN=token_name CITY=city_name weather`
+> Enter the token and the city without saving: <br> 
+`TOKEN=token_name CITY=city_name weather`
 
 ### Appearance:
 
 [![weather-cli-obkin-example.png](https://i.postimg.cc/GhfZg7R8/weather-cli-obkin-example.png)](https://postimg.cc/JGb6GQGM)
+
+---
