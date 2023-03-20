@@ -39,4 +39,4 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 
 ### Appearance:
 
-![weather-example](https://drive.google.com/file/d/1LLGu6T9NUDL9tdEPFhaVTfhcY7ocmtMX/view)
+![weather-example](https://i.postimg.cc/GhfZg7R8/weather-cli-obkin-example.png)
