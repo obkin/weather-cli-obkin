@@ -39,7 +39,6 @@ You can also visit the npm-page [here](https://www.npmjs.com/package/weather-cli
 `TOKEN=token_name CITY=city_name weather`
 
 ### Appearance:
+<br> 
 
 [![weather-cli-obkin-example.png](https://i.postimg.cc/GhfZg7R8/weather-cli-obkin-example.png)](https://postimg.cc/JGb6GQGM)
-
----
